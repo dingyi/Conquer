@@ -1,12 +1,12 @@
 # Conquer
 
-A desktop client app for for [Conquer](https://conquer.earth/).
+Desktop client app for for [Conquer](https://conquer.earth/).
 
 [![](media/screenshot@2x.png)](https://github.com/dingyi/conquer/releases/latest)
 
 ## Download
 
-You can manually download the latest release [here](https://github.com/dingyi/conquer/releases).
+Download the latest release [here](https://github.com/dingyi/conquer/releases).
 
 ## Development
 
