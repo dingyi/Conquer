@@ -1,0 +1,42 @@
+{
+  "name": "Conquer",
+  "version": "1.0.0",
+  "description": "A desktop client app for Conquer",
+  "author": "dingyi",
+  "main": "./main.js",
+  "scripts": {
+    "postinstall": "install-app-deps",
+    "test": "eslint ./*.js",
+    "app": "electron .",
+    "dist": "npm run dist:mac && npm run dist:deb && npm run dist:win",
+    "dist:mac": "build --mac",
+    "dist:linux": "build --linux deb tar.xz",
+    "dist:win": "build --win --ia32"
+  },
+  "devDependencies": {
+    "electron": "^1.4.15",
+    "electron-builder": "^11.7.0",
+    "electron-builder-squirrel-windows": "^11.6.1",
+    "electron-devtools-installer": "^2.0.1",
+    "eslint": "^3.11.1",
+    "eslint-config-rem": "^2.0.2",
+    "minimist": "^1.2.0",
+    "electron-packager": "^8.5.1 "
+  },
+  "dependencies": {
+    "electron-window-state": "^4.0.1"
+  },
+  "eslintConfig": {
+    "extends": "rem/esnext"
+  },
+  "build": {
+    "appId": "com.dingyi.conquer-app",
+    "category": "public.app-category.tools",
+    "asar": true,
+    "win": {
+      "target": [
+        "squirrel"
+      ]
+    }
+  }
+}

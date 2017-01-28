@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Conquer</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body style="-webkit-app-region: drag">
+	<div class="drageable-area"></div>
+	<div id="loader">
+		<div class="loader-container">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 14 32 18" width="96" height="12" fill="#f00" preserveAspectRatio="none">
+      <path opacity="0.8" transform="translate(0 0)" d="M2 14 V18 H6 V14z">
+        <animateTransform attributeName="transform" type="translate" values="0 0; 24 0; 0 0" dur="2s" begin="0" repeatCount="indefinite" keySplines="0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8" calcMode="spline" />
+      </path>
+      <path opacity="0.5" transform="translate(0 0)" d="M0 14 V18 H8 V14z">
+        <animateTransform attributeName="transform" type="translate" values="0 0; 24 0; 0 0" dur="2s" begin="0.1s" repeatCount="indefinite" keySplines="0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8" calcMode="spline" />
+      </path>
+      <path opacity="0.25" transform="translate(0 0)" d="M0 14 V18 H8 V14z">
+        <animateTransform attributeName="transform" type="translate" values="0 0; 24 0; 0 0" dur="2s" begin="0.2s" repeatCount="indefinite" keySplines="0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8" calcMode="spline" />
+      </path>
+    </svg>
+		</div>
+	</div>
+	<webview id="conquer" src="https://conquer.earth/" autosize="on"></webview>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
